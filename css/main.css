@@ -30,3 +30,11 @@ text-align: center;
 position: relative;
 pointer-events: cursor;
 }
+
+.contact {
+  font-family: 'Crimson Text', serif;
+  color: #808080;
+  text-align: center;
+  position: relative;
+  pointer-events: cursor;
+}

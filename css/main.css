@@ -32,6 +32,7 @@ color: #808080;
 text-align: center;
 position: relative;
 pointer-events: cursor;
+top: 50px;
 }
 
 .contact {
@@ -40,4 +41,5 @@ pointer-events: cursor;
   text-align: center;
   position: relative;
   pointer-events: cursor;
+  top: 120px;
 }

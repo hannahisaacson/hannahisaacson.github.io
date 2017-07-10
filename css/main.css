@@ -1,0 +1,32 @@
+.topnav {
+  font-family: 'Crimson Text', serif;
+}
+
+img {
+  max-width: 100%;
+  max-height: 30%;
+}
+
+.landscape {
+  width: 60px;
+  height: 20px;
+}
+
+.topnav {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  z-index: 1;
+}
+
+h1 {
+  text-align: center;
+}
+
+.about {
+font-family: 'Crimson Text', serif;
+color: #808080;
+text-align: center;
+position: relative;
+pointer-events: cursor;
+}

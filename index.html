@@ -1,201 +1,119 @@
-<!doctype html>
-<html lang="en">
-  <head>
+<!DOCTYPE html>
+<html lang='en'>
 
-    <meta charset="UTF-8">
-    <title>Hannah Isaacson Portfolio</title>
-    <link rel="stylesheet" type="text/css" href=/css/main.css>
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<meta name+"viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="css/bootstrap-responsive.css">
+    
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap" rel="stylesheet">
+    <!--Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-<style>
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #FFFFFF;
-
-}
-
-li {
-    float: left;
-}
-
-li a, .dropbtn {
-    display: inline-block;
-    color: #808080;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 25px;
-}
-
-li a:hover, .dropdown:hover .dropbtn {
-    background-color: #FFFFFF;
-
-}
-
-li.dropdown {
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: #808080;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.topnav .icon {
-  display: none;
-  color: #808080;
-  font-family: 'Crimson Text', serif;
-  font-size: 27px;
-  padding: 14px 16px;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
+     <!--JS External-->
+     <script src="functions.js"></script>
+     
+    <!--External Stylesheet-->
+    <link rel='stylesheet' type="text/css" href='stylesheet.css'>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+   
 
 
-</style>
+    <title>Portfolio</title>
+
+    
 </head>
 
 <body>
 
-<div class= "topnav"  id= "myTopnav">
-<ul>
+    <nav class='navbar navbar-default nav-link-default navbar-expand-sm justify-content-center sticky-top'>
+
+        <a class='navbar-brand navbar-brand-default' href='index.html'>Hannah Isaacson</a>
+        <!--Links-->
+        <ul class='navbar-nav'>
+
+            <li class='nav-item'>
+                <a class='nav-link nav-link-default' id='ProjectLink' href='index.html'>Projects</a>
+            </li>
+
+            <li class='nav-item'>
+                <a class='nav-link nav-link-default' id='ContactLink' href='contact.html'>Contact</a>
+            </li>
+            
+            <li class='nav-item'>
+                <a class='nav-link nav-link-default' id='ResumeLink' href='index.html'>Resume</a>
+            </li>
+
+        </ul>
+    </nav>
 
 
 
-  <li><a href="#Home"><b>Hannah Cecilia Isaacson</b></a></li>
- <li><a href="#about">About Me</a></li>
-  <li class="dropdown">
-    <a href="https://hannahisaacson.github.io/resume.html" class="dropbtn">Resume</a>
-    
-    <div class="dropdown-content">
-      <a href="Resume9-10.pdf"target="_blank"><b>Download PDF</b></a>
-      
-               
-               
-  <li><a href="#projects">Projects</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="blog">Blog</a></li>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-
-
+<!--Header/Introduction Section-->
+    <div class='intro'>
+            <div class='picture'>
+                    <p>picture here</p>
+            </div>
+            <div class='introduction'>
+                <h4>header</h4>
+                <p> lil description</p>
+            </div>
     </div>
-  </li>
-</ul>
-</div>
 
-<section id="Home">
-<div class "landscape">
-  <img src= "IMG_5237.JPG">
-  <a href< "Home.html"></a>
-</div>
+<!--Projects/Experience Tile Section-->
+    <div class='container'>
 
+        <div class='header'>
+            <h2>Projects</h2>
+        </div>
 
-<main>
+            <div class="row">
+                    <div class="col-sm-6 hover-zoomin">
+                        <a href="#" title=''>
+                            <img src='unsplashPlaceholder.jpg'  class='img-fluid'  alt='tile image'>
+                            <h2><span class='text-white'>Tile One</span></h2>
+                        </a>
+                    </div>
+                            
+                    
+                    <div class="col-sm-6 hover-zoomin">
+                            <a href="#" title=''>
+                                <img src='unsplashPlaceholder.jpg'  class='img-fluid'  alt='tile image'>
+                                <h2><span class='text-white'>Tile Two</span></h2>
+                            </a>
+                    </div>
+                    
+            </div>
 
-<section id="About">
-<div class= "about">
+                
+            <div class="row">
+                    <div class="col-sm-6 hover-zoomin">
+                            <a href="#" title=''>
+                                <img src='unsplashPlaceholder.jpg'  class='img-fluid'  alt='tile image'>
+                                <h2><span class='text-white'>Tile Three</span></h2>
+                            </a>
+                    </div>
+                            
+                        
+                    
+                    <div class="col-sm-6 hover-zoomin">
+                            <a href="#" title=''>
+                                <img src='unsplashPlaceholder.jpg'  class='img-fluid'  alt='tile image'>
+                                <h2><span class='text-white'>Tile Four</span></h2>
+                            </a>
+                    </div>  
+            </div>
+       
+    </div>
 
-
-<h2>About</h2>
-  <div style="float: left; width: 50%;">
-
-    <ul><b>Name:</b> Hannah Isaacson</ul>
-  <ul><b>Specialization:</b> Data Science</ul>
-  <ul><b>Fields of Interest:</b> Machine Learning, Quantitative Finance </ul>
-
-
-  </div>
-  <div style="float: right; width: 50%; ">
-
-  <ul><b>Expected Graduation:</b> May 2020</ul>
-  <ul><b>Degree:</b> B.S. Computer Science</ul>
-    <ul><b>Minor:</b> Business </ul>
-  <ul><b>School:</b> Indiana University, Bloomington, IN</ul>
-<a href"about.html"></a>
-
-  </div>
-
-
-
-</div>
-
-<section id="contact">
-<div class="contact">
-<h2>Contact</h2>
-
-
-<ul><b>Email:</b> hcisaacs@iu.edu</ul>
-<ul><b>LinkedIn:</b> https://www.linkedin.com/in/hannah-isaacson-618762101 </ul>
-<ul><b>GitHub:</b> https://github.com/hannahisaacson </ul>
-<a href"contact.html"></a>
- 
-</div>
+    
 
 
+    
 
-
-
-
-
-
-
-</main>
-
-<script>
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
-</script>
-
+</body>
+</html>

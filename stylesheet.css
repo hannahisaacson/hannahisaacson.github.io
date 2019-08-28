@@ -168,17 +168,38 @@ u {
 
 .img-fluid{
     border-radius: 30px;
+    margin-top: 5%;
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-bottom: 75%;
+    
+    
 }
 
-.intro .introduction {
-    text-align: left;
-    margin-left: 7%;
-    line-height: 30px;
-    font-family: 'Barlow', sans-serif;
-    margin-right: 5%;
-    margin-top: 15%;
- 
+.text {
+
+    margin-top: 25%;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-family:'Raleway', sans-serif;
 }
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+
+}
+
+/*Clears floats after the columns*/
+.row:after {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
 
 
 

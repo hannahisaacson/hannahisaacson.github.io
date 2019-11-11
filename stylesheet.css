@@ -53,8 +53,7 @@
     color: #CBBEB5;
     font-size: 37px;
     margin-right: 10px;
-    background-color: white;
-    
+    background-color: white; 
 }
 .nav-link-default:hover {
     background-color: white;
@@ -133,16 +132,19 @@
 }
 
 .header {
-    
     text-align: center;
     margin-bottom: 20px;
 }
 
+/*header for the project section*/
 .header h2{
     font-size: 40px;
     /*font-family: 'Barlow', sans-serif;*/
     font-family: 'Raleway', sans-serif;
+    margin-top: 4rem;
+    text-align: center;
 }
+
 
 .intro {
     margin-top: 5%;
@@ -167,18 +169,16 @@ u {
 }
 
 .img-fluid{
-    border-radius: 30px;
-    margin-top: 5%;
+    
+    margin-top: 8%;
     margin-right: 15%;
     margin-left: 15%;
     margin-bottom: 75%;
-    
-    
 }
 
-.text {
 
-    margin-top: 25%;
+.text {
+    margin-top: 17%;
     margin-left: 15%;
     margin-right: 15%;
     font-family:'Raleway', sans-serif;
@@ -199,11 +199,6 @@ u {
     flex-wrap: wrap;
     width: 90%;
 }
-
-
-
-
-
 
 .contactMe {
     text-align: center;
@@ -263,12 +258,9 @@ u {
 }
 
 .card {
-    width: 100%;
+    width: 80%;
     display: inline-block;
     background: #fff;
-    padding: 20px;
-    margin-bottom: 10px;
-    align-content: center;
     margin-top: 20px;
 }
 
@@ -278,6 +270,7 @@ u {
     overflow: hidden;
 }
 
+/*transition for the tiles when hovering*/
 .hover-zoomin img {
     width: 100%;
     height: auto;
@@ -295,12 +288,13 @@ u {
     -ms-transform: scale(1.2);
     transform: scale(1.2);
   }
-
+  /*text inside the project tiles*/
   .text-white {
       color: #fff;
       font-family: 'Abril Fatface', cursive;
-      
   }
+
+  /*text inside the project tiles when hovered*/
   .hover-zoomin:hover a h2 {
     display: block;
     position: absolute;

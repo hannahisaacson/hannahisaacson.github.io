@@ -33,6 +33,7 @@ li{
 /*hover styling for nav elements, excluding the logo element*/
 #nav-element:hover {
     color: blue;
+    cursor: pointer;
 }
 
 /*styling for nav elements only*/
@@ -40,9 +41,22 @@ li{
     text-align:center;
 }
 
+/*navlink highlight styling*/
+#nav-element::selection{
+    color: white;
+    background-color: blue;
+}
+
 /*styling for logo element only*/
 #logo-element {
+    color: blue;
     text-align: center;
+}
+
+/*logo highlight styling*/
+#logo-element::selection {
+    color: white;
+    background-color: blue;
 }
 
 
@@ -80,6 +94,7 @@ main {
 /*styling for card, on-hover*/
 .card:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    cursor: pointer;
 }
 
 /*styling for card photo*/
@@ -95,8 +110,16 @@ main {
 
 /*styling for card title*/
 .card-content {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.5rem;
     margin-top: 0.5rem;
     text-align: center;
+}
+
+/*highlight color for recipe title cards*/
+.card-content::selection {
+    color: white;
+    background-color: blue;
 }
 
 
@@ -116,6 +139,11 @@ footer {
 /*individual styling for icons*/
 #icon-select {
     margin-left: 1rem;
+}
+
+/*hover icons*/
+#icon-select:hover {
+    cursor: pointer;
 }
 
 

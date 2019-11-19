@@ -1,6 +1,8 @@
-* {
-    outline: 1px dotted black; /*for easy visualization*/
+/*
+*{
+    outline: 1px dotted black;
 }
+*/
 
 /*navbar/header styling*/
 header ul{
@@ -21,16 +23,34 @@ li {
 /*navbar*/
 li{
     display: inline-block;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.75rem;
     padding: 10px;
-    background-color: lightpink;
-    outline: 1px solid black;
 }
+
+
+
+/*hover styling for nav elements, excluding the logo element*/
+#nav-element:hover {
+    color: blue;
+}
+
+/*styling for nav elements only*/
+#nav-element {
+    text-align:center;
+}
+
+/*styling for logo element only*/
+#logo-element {
+    text-align: center;
+}
+
 
 /*general html and body styling*/
 html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    height: 100%;
 }
 
 /*body class- general styling format for css grid*/
@@ -41,25 +61,63 @@ body{
 
 /*main class- general styling format for css grid*/
 main {
+    align-content: center;
     display: grid;
     grid-template-columns: min-content min-content min-content;
     justify-content: center;
-    align-content: center;
 }
 
 /*card class styling, for recipe cards*/
 .card {
-    background-color: lightblue;
-    width: 200px;
-    border: 1px black solid;
-    margin: 5px;
-    padding: 10px;
+    background-color: #FCFCFC;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    height: 13rem;
+    margin: 2rem;
+    padding: 10px; 
+    width: 13rem;
 }
+
+/*styling for card, on-hover*/
+.card:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+/*styling for card photo*/
+.card-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 11rem;
+    margin-right: -0.6rem;
+    margin-left: -0.6rem;
+    margin-top: -0.6rem;
+}
+
+/*styling for card title*/
+.card-content {
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
 
 /*styling for footer*/
 footer {
-    padding: 10px;
+    background-color: blue;
+    padding: 1.4rem;
 }
+
+/*comprehensive styling for social icons*/
+.icons {
+    color: white;
+    font-size: 1.4rem;
+    text-align:center;
+}
+
+/*individual styling for icons*/
+#icon-select {
+    margin-left: 1rem;
+}
+
 
 /*adjusts columns from horizontal position to vertical when screen is small */
 @media only screen and (max-width:600px) {

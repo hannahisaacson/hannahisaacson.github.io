@@ -1,0 +1,75 @@
+* {
+    outline: 1px dotted black; /*for easy visualization*/
+}
+
+/*navbar/header styling*/
+header ul{
+    
+    display: grid;
+    grid-template-columns: repeat(4, min-content);
+    justify-content: space-evenly;
+
+}
+
+/*navbar*/
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/*navbar*/
+li{
+    display: inline-block;
+    padding: 10px;
+    background-color: lightpink;
+    outline: 1px solid black;
+}
+
+/*general html and body styling*/
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/*body class- general styling format for css grid*/
+body{
+    display:grid;
+    grid-template-rows: min-content auto min-content;
+}
+
+/*main class- general styling format for css grid*/
+main {
+    display: grid;
+    grid-template-columns: min-content min-content min-content;
+    justify-content: center;
+    align-content: center;
+}
+
+/*card class styling, for recipe cards*/
+.card {
+    background-color: lightblue;
+    width: 200px;
+    border: 1px black solid;
+    margin: 5px;
+    padding: 10px;
+}
+
+/*styling for footer*/
+footer {
+    padding: 10px;
+}
+
+/*adjusts columns from horizontal position to vertical when screen is small */
+@media only screen and (max-width:600px) {
+    header ul{
+        grid-template-columns: none;
+    }
+    main {
+        grid-template-columns: none;
+    }
+}
+
+
+

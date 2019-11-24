@@ -2,10 +2,10 @@ jQuery(document).ready(function() {
     //Put the recipe card information in the modal:
     $(".card").on("click", function(){
 
-        var textToMove = $(this).html();
+        var contentToMove = $(this).html();
 
         //Move the text information to the modal:
-        $(".card-content-modal").html(textToMove);
+        $(".card-content-modal").html(contentToMove);
 
         //Show the backdrop
         $(".backdrop").css("display", "block");

@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Karla&display=swap" rel="stylesheet">
     <!--Font Awesome Library-->
     <script src="https://use.fontawesome.com/eb8396d29a.js"></script>
+    <!--JQuery Google CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     <title>Food Website</title>
 </head>
 <body>
@@ -22,14 +25,18 @@
         </ul>
     </header>
     <main>
+        
         <div class="card">
             <div class="card-img" style="background-image:url('erol-ahmed-54hUU5pNSvo-unsplash.jpg')"></div>
             <div class="card-content">Card Title 1</div>
         </div>
+ 
         <div class="card">
             <div class="card-img" style="background-image:url('erol-ahmed-54hUU5pNSvo-unsplash.jpg')"></div>
             <div class="card-content">Card Title 2</div>
         </div>
+
+
         <div class="card">
             <div class="card-img" style="background-image:url('erol-ahmed-54hUU5pNSvo-unsplash.jpg')"></div>
             <div class="card-content">Card Title 3</div>
@@ -42,6 +49,14 @@
             <div class="card-img" style="background-image:url('erol-ahmed-54hUU5pNSvo-unsplash.jpg')"></div>
             <div class="card-content">Card Title 5</div>
         </div>
+
+        <!--modal popup window-->
+        <div class="backdrop"></div>
+        <div id="recipe-card-modal">
+            <i class="modal-close-button fa fa-times"></i>
+            <div class="card-content-modal"></div>
+        </div>
+
     </main>
     <footer>
         <div class="icons">
@@ -50,5 +65,10 @@
                 <i id="icon-select" class="fa fa-github-square" aria-hidden="true"></i>
         </div>
     </footer>
+
+        <!--JS External File -->
+        <script src="modal.js"></script>
+    
+
 </body>
 </html>

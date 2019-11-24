@@ -151,13 +151,14 @@ footer {
 
 /*modal styling!!*/
 .backdrop {
+    cursor: pointer;
     display:none;
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(0, 0, 0, .7);
+	background: rgba(0, 0, 0, .3);
 	z-index: 1;
 }
 
@@ -170,6 +171,12 @@ footer {
 	width: 60%;
 	background: white;
 	padding: 2rem;
+}
+
+.modal-close-button {
+    cursor: pointer;
+    color: blue;
+    float: right;
 }
 
 /*adjusts columns from horizontal position to vertical when screen is small */

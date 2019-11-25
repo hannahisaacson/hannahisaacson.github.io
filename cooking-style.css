@@ -4,13 +4,33 @@
 }
 */
 
+/*back to top button*/
+#myButton {
+    background-color: blue;
+    bottom: 18px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    outline: none;
+    padding: 12px;
+    position: fixed;
+    right: 30px;
+    z-index: 99;
+}
+
+#myButton:hover {
+    background-color: white;
+    color: blue;
+}
+
 /*navbar/header styling*/
 header ul{
     
     display: grid;
     grid-template-columns: repeat(4, min-content);
     justify-content: space-evenly;
-
 }
 
 /*navbar*/
@@ -24,8 +44,9 @@ li {
 li{
     display: inline-block;
     /*font-family: 'Karla', sans-serif;*/
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 1.75rem;
+    font-weight: 700;
     padding: 10px;
 }
 
@@ -50,8 +71,9 @@ li{
 
 /*styling for logo element only*/
 #logo-element {
-    color: blue;
+    color: black;
     text-align: center;
+    cursor: pointer;
 }
 
 /*logo highlight styling*/
@@ -111,7 +133,7 @@ main {
 
 /*styling for card title*/
 .card-content {
-    font-family: 'Karla', sans-serif;
+    font-family: 'Alegreya Sans', sans-serif;
     font-size: 1.5rem;
     margin-top: 0.5rem;
     text-align: center;
@@ -151,26 +173,26 @@ footer {
 
 /*modal styling!!*/
 .backdrop {
+    background: rgba(0, 0, 0, .3);
     cursor: pointer;
     display:none;
+    height: 100%;	
+    left: 0;
 	position: fixed;
 	top: 0;
-	left: 0;
 	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, .3);
-	z-index: 1;
+    z-index: 1;
 }
 
 #recipe-card-modal {
+    background: white;
 	display:none;
-	position: fixed;
-	z-index: 1000;
+    left: 18%;
 	top: 100px;
-	left: 20%;
+    padding: 2rem;
+    position: fixed;
 	width: 60%;
-	background: white;
-	padding: 2rem;
+    z-index: 1000;
 }
 
 .modal-close-button {

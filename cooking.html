@@ -14,41 +14,42 @@
     <!--JQuery Google CDN-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <title>Hannah's Recipe Log</title>
+
+    <title>recipes</title>
 </head>
 <body>
     <header>
         <ul>
             <li id="logo-element">Logo</li>
-            <li id="nav-element">All</li>
-            <li id="nav-element">Savory</li>
-            <li id="nav-element">Sweet</li>
+            <li class="all-button" id="nav-element">All</li>
+            <li class="savory-button" id="nav-element">Savory</li>
+            <li class="sweet-button" id="nav-element">Sweet</li>
         </ul>
     </header>
     <main>
         
-        <div class="card">
+        <div class="card sweet">
             <div class="card-img" style="background-image:url('erol-ahmed-54hUU5pNSvo-unsplash.jpg')"></div>
-            <div class="card-content">Card Title 1</div>
+            <div class="card-content"> Sweet Card 1</div>
         </div>
  
-        <div class="card">
+        <div class="card savory">
             <div class="card-img" style="background-image:url('rai-vidanes-tVy3x2Vu_z4-unsplash.jpg')"></div>
-            <div class="card-content">Card Title 2</div>
+            <div class="card-content" >Savory Card 2</div>
         </div>
 
 
-        <div class="card">
+        <div class="card sweet">
             <div class="card-img" style="background-image:url('cayla1-i2aFnaZ31Cg-unsplash.jpg')"></div>
-            <div class="card-content">Card Title 3</div>
+            <div class="card-content"> Sweet Card 3</div>
         </div>
-        <div class="card">
+        <div class="card savory">
             <div class="card-img" style="background-image:url('rai-vidanes-tVy3x2Vu_z4-unsplash.jpg')"></div>
-            <div class="card-content">Card Title 4</div>
+            <div class="card-content">Savory Card 4</div>
         </div>
-        <div class="card">
+        <div class="card sweet">
             <div class="card-img" style="background-image:url('cayla1-i2aFnaZ31Cg-unsplash.jpg')"></div>
-            <div class="card-content">Card Title 5</div>
+            <div class="card-content">Sweet Card 5</div>
         </div>
 
         <!--modal popup window-->
@@ -69,8 +70,9 @@
         </div>
     </footer>
 
-        <!--JS External File -->
+        <!--JS External Files-->
         <script src="modal.js"></script>
+        <script src="cardSort.js"></script>
     
 
 </body>

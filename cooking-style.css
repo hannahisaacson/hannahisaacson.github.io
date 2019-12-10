@@ -145,7 +145,6 @@ main {
     background-color: blue;
 }
 
-
 /*styling for footer*/
 footer {
     background-color: blue;
@@ -199,6 +198,8 @@ footer {
     cursor: pointer;
     color: blue;
     float: right;
+    margin-top: -1.5rem;
+    margin-right: -1.5rem;
 }
 
 /*adjusts columns from horizontal position to vertical when screen is small */
